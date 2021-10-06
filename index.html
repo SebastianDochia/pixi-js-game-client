@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>GamesClientTest</title>
+    <link rel="stylesheet"
+          href="./styles/styles.css">
+    </link>
+</head>
+
+<body>
+    <div class="status-container">
+        <div class="display">
+            <h2>Number of current shapes</h2>
+            <h3>|ERROR|</h3>
+        </div>
+    </div>
+    <div class="canvas"></div>
+    <div class="status-container">
+        <div>
+            <div class="button-group">
+                <button onclick="changeSPS(-100)">+</button>
+                <button onclick="changeSPS(100)">-</button>
+            </div>
+            <span>Shapes/Second: </span>
+            <span id="sps">0</span>
+        </div>
+        <div>
+            <div class="button-group">
+                <button onclick="changeGravity(0.1)">+</button>
+                <button onclick="changeGravity(-0.1)">-</button>
+            </div>
+            <span>Gravity Value: </span>
+            <span id="grav">0</span>
+        </div>
+    </div>
+
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script src="scripts/enums/SpecialType.js"></script>
+    <script src="scripts/classes/ShapeBuilder.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

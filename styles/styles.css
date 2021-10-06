@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: unset;
+    overflow: hidden;
+}
+
+.canvas {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    border-style: solid;
+}
+
+.status-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.display {
+    text-align: center;
+}
+
+.button-group {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.button-group button {
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .canvas {
+        width: 100%;
+    }
+}
